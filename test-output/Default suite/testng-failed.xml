@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNG.TestNGEx12">
+      <class name="selenium_grid.GridEx1">
         <methods>
-          <include name="login"/>
+          <include name="m1"/>
         </methods>
-      </class> <!-- testNG.TestNGEx12 -->
+      </class> <!-- selenium_grid.GridEx1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

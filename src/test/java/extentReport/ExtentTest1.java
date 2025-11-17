@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -14,12 +15,12 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class ExtentTest1 {
-
-	public static void main(String[] args) {
+	@Test
+	public void test1() {
 		WebDriver driver=new ChromeDriver();
 		driver.get("http://automationbykrishna.com/");
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-		ExtentSparkReporter reporter = new ExtentSparkReporter("./Reports/report.html");
+		ExtentSparkReporter reporter = new ExtentSparkReporter("./Reports/report11.html");
 		reporter.config().setReportName("Automation Test Repot");
 		reporter.config().setDocumentTitle("Test Execution Report");
 		
