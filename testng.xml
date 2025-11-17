@@ -7,6 +7,7 @@
    <test thread-count="5" name="Sanity">
     <classes>
       <class name="testNG.TestNGEx11"/>
+      <class name="extentReport.ExtentReportEx1"></class>
     </classes>
  
  </test> <!-- Test -->
