@@ -14,7 +14,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
  
 public class ExtentReportEx1 {
  
-	public static void main(String[] args) {
+	public void extent(){
 		// TODO Auto-generated method stub
 		WebDriver driver  = new ChromeDriver();
 		driver.get("http://automationbykrishna.com/");
